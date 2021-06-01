@@ -1,9 +1,10 @@
 /**************** 光标渲染 *******************/
 
 class Circle {
-    constructor({ origin, speed, color, angle, context }) {
+    constructor({origin, speed, color, angle, context}) {
+        
         this.origin = origin
-        this.position = { ...this.origin }
+        this.position = {...this.origin}
         this.color = color
         this.speed = speed
         this.angle = angle
@@ -26,7 +27,7 @@ class Circle {
 }
 
 class Boom {
-    constructor({ origin, context, circleCount = 10, area }) {
+    constructor({origin, context, circleCount = 10, area}) {
         this.origin = origin
         this.context = context
         this.circleCount = circleCount
@@ -97,7 +98,7 @@ class CursorSpecialEffects {
 
     handleMouseDown(e) {
         const boom = new Boom({
-            origin: { x: e.clientX, y: e.clientY },
+            origin: {x: e.clientX, y: e.clientY},
             context: this.computerContext,
             area: {
                 width: this.globalWidth,

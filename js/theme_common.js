@@ -31,6 +31,7 @@
             }
         }
 
+
         if(typeof(record_json['record_bool'])!='undefined' && record_json['record_bool']!='null' && record_json['record_bool']!=''){
             if(record_json['record_bool']=='r_true' && record_json['r_wechat_url']!='null' && record_json['r_wechat_url']!=''){ //选择要语音
                 $('#audio_record').attr('src',record_json['r_wechat_url']);

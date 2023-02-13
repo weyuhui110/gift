@@ -109,7 +109,6 @@
 
 
 
-       
 
         wx.ready(function(){
             console.log('wx.ready success to start');
